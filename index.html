@@ -16,16 +16,16 @@
             <ul class="nav-list">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <main class="main container-fluid">
-        <section id="hero">
+        <section id="hero" >
             <div class="hero-container">
                 <div class="profile-pic-container">
-                    <img src="./assets/profile-image.png" alt="Profile Pic">
+                    <img src="./Assets/profile-image.png" alt="Profile Pic">
                 </div>
                 <div class="hero-details-container">
                     <p class="hero_p p1">Hi I'm</p>
@@ -33,135 +33,125 @@
                     <p class="hero_p p2">Software Engineer</p>
                     <div class="btn-container">
                         <button type="button" class="btn">My Resume</button>
-                        <button type="button" class="btn">Contact Me</button>
+                        <a href="#contact"><button type="button" class="btn">Contact Me</button></a>
                     </div>
                 </div>
             </div>
             
         </section>
-        <section id="about">
+        <section id="about" class="container-fluid">
             <div>
-                <h1 class="about_title">About Me</h1>
+                <h1 class="about_title">About</h1>
             </div>
-            <div class="about-container">
-                <div class="intro-card">
-                    <p>Hi again, Im Anaz Mohammed. Im a sofware engineer living in California. Im currently an intern at Alcatel-Lucent Enterprise where I develop internal testing tools for the company.  
-                        
-                    </p>
-                </div>
-                <div class="education-card"></div>
-                <div class="hobbies-card"></div>
-            </div>
+            <div class="introduction container">
+                <ul class="list-group">
+                    <li class="list-group-item about-item">👋 Hello! I'm a Software Engineer with a diverse skill set that spans multiple programming languages, including 
+                        <span class="about-skills">Python</span>, 
+                        <span class="about-skills">JavaScript</span>, 
+                        <span class="about-skills">Java</span>, and more. I have hands-on experience with cutting-edge technologies, such as 
+                        <span class="about-skills">React</span>, 
+                        <span class="about-skills">Angular</span>, 
+                        <span class="about-skills">AWS</span>, and 
+                        <span class="about-skills">MongoDB</span>, allowing me to create robust and innovative solutions.</li>
+                    <li class="list-group-item about-item">🎓 I hold a 
+                        <span class="about-education">Bachelor's Degree</span> in 
+                        <span class="about-education">Computer Science</span> from 
+                        <span class="about-education">California State University, Northridge</span>, where I graduated with a 
+                        <span class="about-education">GPA of 3.66</span>, showcasing my commitment to excellence.</li>
+                </ul>
         </section>
-        <!-- <section id="about" class="container-fluid">
-
-            <div>
-                <h1 class="about_title">About Me</h1>
-            </div>
-            <div class="about-me-slider">
-                <div class="circle circle-left"></div>
-                <div class="circle circle-right"></div>
-                <div class="introduction details-card">
-                    <h1 class="card-title">Intro</h1>
-                    
-                </div>
-                <div class="education details-card">
-                    <h1 class="card-title">Education</h1>
-                </div>
-                <div class="hobbies details-card">
-                    <h1 class="card-title">Hobbies</h1>
-                </div>
-            </div>
-        </section> -->
-        <!-- <section id="about" class="container-fluid">
-            <div>
-              <h1 class="about_title">About Me</h1>
-            </div>
-            <div class="about-me-slider container-fluid">
-              <div class="card introduction details-card">
-                <h1 class="card-title">Intro</h1>
-              </div>
-              <div class="card education details-card">
-                <h1 class="card-title">Education</h1>
-              </div>
-              <div class="card hobbies details-card">
-                <h1 class="card-title">Hobbies</h1>
-              </div>
-            </div>
-            <button class="arrow-button left">←</button>
-            <button class="arrow-button right">→</button>
-          </section> -->
-          
-        <section id="experience">
+        <section id="experience"> 
             <div>
                 <h1 class="about_title">Experience</h1>
             </div>
             <div class="experience-container">
                 <div class="experience-card">
-                    <div class="heading">
-
+                    <div class="card-heading">
+                        <div class="img-wrapper" id="experience-1">
+                            <img src="./Assets/logo.png" alt="ALE logo" class="ALE-logo">
+                        </div>
+                        <h6 class="job-location">Alcatel-Lucent Enterprise</h6>
                     </div>
-                    <div class="body">
-                        <ul>
-                            <li>
-
-                            </li>
-                        </ul>
+                    <div class="card-information">
+                        <h4>Software Engineer Intern</h4>
+                        <p class="job-timeline">Jul 2023 - Present</p>
+                        <div class="job-details">
+                            <p>- Developed an internal web app using flask to display information on testing setups, doubling server lookup time</p>
+                            <p>- Created a testing report tool to compile a data summary of testing scripts, enhancing the team's data analysis capabilities by 30%</p>
+                        </div>
+                    </div>
+                    <div class="skills-used">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Javascript</span>
+                        <span>Excel</span>
                     </div>
                 </div>
                 <div class="experience-card">
-
+                    <div class="card-heading">
+                        <div class="img-wrapper">
+                            <img src="./Assets/mooncoin-logo.png" alt="ALE logo" class="ALE-logo">
+                        </div>
+                        <h6 class="job-location">Mooncoin Technologies</h6>
+                    </div>
+                    <div class="card-information">
+                        <h4>JIRA Task Manager</h4>
+                        <p class="job-timeline">Jul 2022 - Nov 2022</p>
+                        <div class="job-details">
+                            <p>- Monitored the status of open tickets on Jira, in order to close finished tickets, allowing developers to save up to 2 hours on task cleanup
+                            </p>
+                            <p>- Delegated tickets to available employees, to fast track project progress, increasing project efficiency by 10%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skills-used">
+                        <span>Jira</span>
+                        <span>Github</span>
+                    </div>
                 </div>
                 <div class="experience-card">
-
+                    <div class="card-heading">
+                        <div class="img-wrapper">
+                            <img src="./Assets/Fugetron-logo.png" alt="ALE logo" class="ALE-logo">
+                        </div>
+                        <h6 class="job-location">Fugetron Corp</h6>
+                    </div>
+                    <div class="card-information">
+                        <h4>Data Engineer Intern</h4>
+                        <p class="job-timeline">Oct 2021 - Jun 2022</p>
+                        <div class="job-details">
+                            <p>
+                                - Created an interal tool that sped up the migration of MySQL database tables
+                                to Snowflake by 20%
+                            </p>
+                            <p>
+                                - Generated Python scripts for analyzing and reconciliating 10,000+ data values
+                            </p>
+                            <p>
+                                - Worked with AWS services in an Agile environment
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skills-used">
+                        <span>Python</span>
+                        <span>Snowflake</span>
+                        <span>AWS</span>
+                        <span>MySQL</span>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h1 class="about_title">Skills</h1>
-            </div>
-            <div class="skills-slider">
-                <div class="skills-column">
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                </div>
-                <div class="skills-column">
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                </div>
-                <div class="skills-column">
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                    <div class="skills-card"></div>
-                </div>
-                
-                
-
-                
             </div>
         </section>
-        <section id="projects">
-            <div>
-                <h1 class="about_title">Projects</h1>
-            </div>
-            <div class="project-card project1">
-
-            </div>
-        </section>
+        <!-- <section id="projects">
+            Projects
+        </section> -->
         <section id="contact">
-            <div>
-                <h1 class="about_title">Contact</h1>
-            </div>
             <div class="contact-card">
-
+                <img src="./Assets/email.png" alt="email" class="icon">
+                <p>ibnjiyash@gmail.com</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.github.com/anazmd"><img src="./Assets/github.png" alt="Github Icon" class="icon"></a>
+                <a href="https://www.linkedin.com/in/anzmhd/"><img src="./Assets/linkedin.png" alt="linkedin Icon" class="icon"></a>
             </div>
         </section>
     </main>
@@ -169,6 +159,5 @@
         <p>Copyright &#169; 2023 Anaz Mohammed. All Rights Reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
 </body>
 </html>
